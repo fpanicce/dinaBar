@@ -15,11 +15,15 @@ body{
 h1{ font-size: 2em; }
 h2{ font-size: 1.5em; }
 h3{ font-size: 1.25em; }
-p{ font-size: 1em; }
 ul{ list-style: none; }
 li{ font-size: 1em;}
+p{
+    font-size: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
-button{ 
+.boton{ 
     font-size: 1.5em;
     font-weight: bold;
     padding: 5px 5px;
@@ -31,7 +35,7 @@ button{
     cursor: pointer;
 }
 
-button a{ 
+.boton a{ 
     color: white;
 }
 
@@ -39,14 +43,11 @@ a{
     color: blueviolet;
 }
 
-button:hover{
+.boton:hover{
     background-color: blueviolet;
 }
 
-a:hover{
-    background-color: blueviolet;
-    color: white;
-}
+
 /* Estilo al headear */
 
 .container{
@@ -231,7 +232,115 @@ footer h3{
     font-size: 0.8em;
 }
 
+/* Agrego estilos a Galeria */
+
+.seccion1{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    color: white;
+    background-color: rgb(40, 40 ,40);
+    height: 30%;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 70vh;
+    margin: 5%;
+}
+
+.box1{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("imagenes/Foto1.JPG");
+}
+
+.box2{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("imagenes/Foto2.JPG");
+}
+
+.box3{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("imagenes/Foto3.JPG");
+}
+
+.box4{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("imagenes/Foto4.JPG");
+}
+
+.box5{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("imagenes/Foto5.JPG");
+}
+
+.box6{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("imagenes/Foto6.JPG");
+}
+
+.box p{
+    display: none;
+}
+.box h2{
+    display: none;
+}
+
+.galeria-tentada{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    height: 80vh;
+    color: white;
+    background-color: rgb(70, 43, 60);
+}
+
+.tentada-ubicacion h1{
+    padding: 100px;
+}
+
 @media (min-width: 720px){
+    /* Media Query Index */
+    header{
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
+
     header .container{
         flex-direction: row;
         justify-content: space-between;
@@ -240,7 +349,8 @@ footer h3{
 
     header nav{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
     }
     nav ul{
         list-style-type: none;
@@ -271,6 +381,30 @@ footer h3{
     
     #nuestra-carta p{
         display: contents;
+        margin-left: 5%;
+        margin-right: 5%;
         
     }
+
+    /* Media query de galeria */
+
+    .seccion1{
+        display: grid;
+    }
+
+    .galeria-tragos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 5%;
+    }
+
+    .box p{
+        display: contents;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
+
+
+
