@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 /* Aplico estilos generales */
@@ -9,14 +9,15 @@
 html{ scroll-behavior: smooth;}
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 }
 
-h1{ font-size: 2em; }
+h1{ font-size: 2em !important;
+    font-family: 'Roboto', sans-serif !important}
 h2{ font-size: 1.5em; }
 h3{ font-size: 1.25em; }
-ul{ list-style: none; }
-li{ font-size: 1em;}
+ul{ list-style: none !important; }
+li{ font-size: 1em !important;}
 p{
     font-size: 1em;
     margin-left: 5%;
@@ -36,80 +37,84 @@ p{
 }
 
 .boton a{ 
-    color: white;
+    color: white !important;
 }
 
-a{
-    color: blueviolet;
-}
+
 
 .boton:hover{
-    background-color: blueviolet;
+    background-color: blueviolet !important;
 }
 
 
 /* Estilo al headear */
 
+/*
 .container{
-    max-width: 1400px;
-    margin: auto
+    max-width: 1400px !important;
+    margin: auto !important;
 }
 
 header{
-    background-color: rgb(20, 20, 20);
-    display: block;
+    background-color: rgb(20, 20, 20) !important;
+    display: block !important;
 }
 
 header .container{
-    display: flex;
-    justify-content: space-between;
+    display: flex !important;
+    justify-content: space-between !important;
 }
 
 .container .logo{
-    color: white;
-    padding: 5px 5x;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 10px;
+    color: white !important;
+    padding: 5px 5x !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    margin-left: 10px !important;
 }
 
 header nav{
-    display: flex;
-    padding: 5px 5px;
-    text-align: center;
+    display: flex !important;
+    padding: 5px 5px !important;
+    text-align: center !important;
 }
 
 header li{
-    padding-bottom: 5px;
+    padding-bottom: 5px !important;
 }
 
 header a{
-    text-decoration: none;
-    color: white;
+    text-decoration: none !important;
+    color: white !important;
+}
+*/
+
+header{
+    background-color: rgb(20, 20, 20) !important;
 }
 
 /* Estilo a la primer seccion */
 
 .dina{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    text-align: center;
-    height: 90vh;
-    color: white;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center !important;
+    height: 90vh !important;
+    color: white !important;
     background-image: linear-gradient(
         0deg,
-        rgb(0,0,0,0.5),
-        rgb(0,0,0,0.5)
+        rgb(1,1,1,0.5),
+        rgb(1,1,1,0.5)
     )
     ,url("imagenes/fondoDinaNuevo.JPG");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 
 .dina h1{
-    padding: 20px 20px;
+    padding: 20px 20px !important;
 }
 
 /* Estilo a la segunda seccion */
@@ -117,18 +122,18 @@ header a{
 #nosotros{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
     text-align: center;
     height: 70vh;
     color: black;
+    background-color: rgb(245, 239, 233);
 }
 
 .descripcion{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 10%;
 }
 
 /* Estilo a la segunda seccion */
@@ -333,6 +338,14 @@ footer h3{
     padding: 100px;
 }
 
+/* Agrego estilos a Contactos */
+
+.imagen-contactos{
+    display: none;
+}
+
+
+
 @media (min-width: 720px){
     /* Media Query Index */
     header{
@@ -403,6 +416,11 @@ footer h3{
         display: contents;
         margin-left: 5%;
         margin-right: 5%;
+    }
+
+    #navbarNav{
+        display: flex !important;
+        justify-content: right !important;
     }
 }
 
