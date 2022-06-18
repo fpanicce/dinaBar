@@ -91,6 +91,10 @@ header a{
 
 header{
     background-color: rgb(20, 20, 20) !important;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    padding: 2%;
 }
 
 /* Estilo a la primer seccion */
@@ -137,10 +141,6 @@ header{
 
 /* Estilo a nuestras-imagenes */
 
-hr{
-    height: 1vh;
-}
-
 #nuestras-imagenes{
     display: flex;
     flex-direction: column;
@@ -148,7 +148,7 @@ hr{
     text-align: center;
     color: white;
     background-color: rgb(30, 30 ,30);
-    height: 110vh;
+    height: 30%;
 }
 
 .nuestros-cocktails p{
@@ -163,7 +163,7 @@ hr{
 
 .container-carrusel img{
     border-radius: 15px;
-    height: 80vh;
+    height: 60vh;
 }
 
 .titulos-galeria{
@@ -178,7 +178,7 @@ hr{
     color: white;
 }
 
-.titulos-galeria h1{
+.titulos-galeria h2{
     padding: 0;
     margin: 0;
 }
@@ -387,13 +387,6 @@ footer h3{
     padding: 100px;
 }
 
-/* Agrego estilos a Contactos */
-
-.imagen-contactos{
-    display: none;
-}
-
-
 
 @media (min-width: 720px){
     /* Media Query Index */
@@ -401,6 +394,7 @@ footer h3{
         width: 100%;
         position: fixed;
         z-index: 100;
+        padding: 0;
     }
 
     header .container{
@@ -472,6 +466,7 @@ footer h3{
 
     .container-carrusel img{
         border-radius: 15px;
+        height: 80vh;
     
     }
 
