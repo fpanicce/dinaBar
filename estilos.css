@@ -41,7 +41,6 @@ p{
 }
 
 
-
 .boton:hover{
     background-color: blueviolet !important;
 }
@@ -135,6 +134,56 @@ header{
     justify-content: center;
     text-align: center;
 }
+
+/* Estilo a nuestras-imagenes */
+
+hr{
+    height: 1vh;
+}
+
+#nuestras-imagenes{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    color: white;
+    background-color: rgb(30, 30 ,30);
+    height: 110vh;
+}
+
+.nuestros-cocktails p{
+    display: none;
+}
+
+
+
+.container-carrusel{
+    padding: 5%;
+}
+
+.container-carrusel img{
+    border-radius: 15px;
+    height: 80vh;
+}
+
+.titulos-galeria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border-radius: 15px;
+    background-color: rgb(50, 50, 50);
+    margin: 5%;
+    color: white;
+}
+
+.titulos-galeria h1{
+    padding: 0;
+    margin: 0;
+}
+
+
 
 /* Estilo a la segunda seccion */
 
@@ -398,6 +447,38 @@ footer h3{
         margin-right: 5%;
         
     }
+
+    #nuestras-imagenes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100vh;
+
+    }
+
+    .nuestros-cocktails{
+        width: 40%;
+        margin-top: 3%;
+    }
+
+
+    #nuestras-imagenes p{
+        display: contents;
+    }
+
+    .parrafo-galeria{
+        margin: 10%;
+    }
+
+    .container-carrusel img{
+        border-radius: 15px;
+    
+    }
+
+    .carousel-inner{
+        width: 80vh;
+    }
+
 
     /* Media query de galeria */
 
