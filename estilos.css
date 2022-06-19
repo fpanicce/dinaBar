@@ -114,6 +114,7 @@ header{
     ,url("imagenes/fondoDinaNuevo.JPG");
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    background-position: center top;
 }
 
 .dina h1{
